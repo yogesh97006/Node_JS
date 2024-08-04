@@ -1,0 +1,16 @@
+{
+  "name": "09_validator_and_form",
+  "version": "1.0.0",
+  "description": "The Module Conatins Two Types Of Modules One Is Chalk And Validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "nodemon": "^3.1.4",
+    "validator": "^13.12.0"
+  }
+}
