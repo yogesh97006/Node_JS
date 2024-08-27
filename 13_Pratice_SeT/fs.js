@@ -27,5 +27,5 @@ let data = "The is Pratice Code File System in Node JS"
 // })
 
 // fs.rmdir("./FS",(err)=>{
-//     console.log(err);
+//     console.log(err);  
 // })
