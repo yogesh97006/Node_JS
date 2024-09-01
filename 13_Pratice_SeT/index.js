@@ -1,20 +1,21 @@
 const http = require('http')
 
 let server = http.createServer((req,res)=>{
-     if(req=='/'){
+     if(req.url=='/'){
         res.end("Home Page")
      } 
-      else if(req=="/About"){
+      else if(req.url=="/About"){
         res.end("About Page")
       }
-      else if(req=='/Projects'){
+      else if(req.url=='/Projects'){
             res.end("Projects Page")
       }
-      else if(req=='/Info'){
+      else if(req.url=='/Info'){
         res.end('Info Page')
       }
       else{
-        res.end('Sorry Error 404 ')
+        res.writeHead(404,{'Content-Type':"text/html"})
+        res.end('<h1>Sorry Error 404 </h1>')
       }
 })
 
